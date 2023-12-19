@@ -1,16 +1,16 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import DahsHeader from './DahsHeader'
+import DashHeader from './DashHeader'
 import DashFooter from './DashFooter'
 
 function DashLayout() {
   return (
     <>
-        <DahsHeader />
-        <div className='dash-container'>
-            <Outlet/>
-        </div>
-        <DashFooter/>
+      <DashHeader />
+      <div className='dash-container'>
+        <Outlet />
+      </div>
+      <DashFooter />
     </>
   )
 }

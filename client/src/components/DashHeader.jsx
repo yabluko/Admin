@@ -11,32 +11,32 @@ const NOTES_REGEX = /^\/dash\/notes(\/)?$/
 const USERS_REGEX = /^\/dash\/users(\/)?$/
 
 
-function DahsHeader() {
+function DashHeader() {
     const navigate = useNavigate();
     const { pathname } = useLocation();
 
 
-    const [setLogOut, {isLoading, isError, error, isSuccess}  ] = useLogOutMutation();
+    const [setLogOut, { isLoading, isError, error, isSuccess }] = useLogOutMutation();
 
 
     useEffect(() => {
-        if(isSuccess) navigate('/');
+        if (isSuccess) navigate('/');
     }, [isSuccess, navigate])
 
-    if(isLoading) return <p>Loging out...</p>
+    if (isLoading) return <p>Loging out...</p>
 
-    if(isError) return <p>Error : {error.data?.message}</p>
+    if (isError) return <p>Error : {error.data?.message}</p>
 
     let dashClass = null;
-    if(!DASH_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && !NOTES_REGEX.test(pathname)){
+    if (!DASH_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && !NOTES_REGEX.test(pathname)) {
         dashClass = 'dash-header__container--small'
     }
 
     const logOutButton = (
-        <button 
-        className='icon-button'
-        title='Logout'
-        onClick={setLogOut}
+        <button
+            className='icon-button'
+            title='Logout'
+            onClick={setLogOut}
         >
             <FontAwesomeIcon icon={faRightFromBracket} />
         </button>
@@ -59,4 +59,4 @@ function DahsHeader() {
     return content
 }
 
-export default DahsHeader
+export default DashHeader

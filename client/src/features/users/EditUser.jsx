@@ -1,15 +1,16 @@
 import React from 'react'
 import { useParams } from 'react-router'
-import { useSelector } from 'react-redux'; 
+import { useSelector } from 'react-redux';
 import { selectUserById } from './usersApiSlice';
 import EditUserForm from './EditUserForm';
 
 function EditUser() {
-  const {id} = useParams();
+  const { id } = useParams();
+  console.log("EditUser")
 
   const user = useSelector(state => selectUserById(state, id));
 
-  const content = user ? <EditUserForm user={user}/> : <p>Fuck..</p>
+  const content = <EditUserForm user={user} />
 
   return content
 }

@@ -5,7 +5,7 @@ import User from './User';
 
 function UsersList() {
   const { data: users, isError, isSuccess, isLoading, error } = useGetUsersQuery(undefined, {
-    pollingInterval: 6000,
+    pollingInterval: 15000,
     refetchOnFocus: true,
     refetchOnMountOrArgChange: true,
 
@@ -13,7 +13,7 @@ function UsersList() {
 
   let content;
 
-
+  console.log("UsersList");
 
   if (isLoading) {
     content = <p>isLoading...</p>

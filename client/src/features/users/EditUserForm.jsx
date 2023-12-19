@@ -11,9 +11,11 @@ const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
 
 
 function EditUserForm({ user }) {
+
+
   const [deleteUser, { isSuccess: isSuccessDel, isError: isErrorDel, error: delerror }] = useDeleteUserMutation();
   const [updateUser, { isSuccess, isLoading, isError, error }] = useUpdateUserMutation();
-
+  console.log("EditUserForm")
   const navigate = useNavigate();
 
   const [username, setUsername] = useState(user.username);

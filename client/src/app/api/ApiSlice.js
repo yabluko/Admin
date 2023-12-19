@@ -7,7 +7,6 @@ const baseQuery = fetchBaseQuery({
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().authReducer.token;
-        console.log(token);
 
         if (token) {
             headers.set('Authorization', `Bearer ${token}`);
@@ -27,9 +26,6 @@ const baseQueryRefreshToken = async (args, api, extraOptions) => {
 
         const refreshRes = await baseQuery('/auth/refresh', api, extraOptions);
 
-        console.log(refreshRes);
-        // console.log({ ...refreshRes.data })
-        // // console.log({ refreshRes.data})
         if (refreshRes?.data) {
 
             api.dispatch(setCredentials({ ...refreshRes.data }));
@@ -45,11 +41,9 @@ const baseQueryRefreshToken = async (args, api, extraOptions) => {
         }
 
     }
-
-
     return result
-
 }
+
 
 export const apiSlice = createApi({
     baseQuery: baseQueryRefreshToken,
