@@ -14,7 +14,6 @@ function PersistLogin() {
 
     const [refresh, { isLoading, isSuccess, isError, isUninitialized, error }] = useRefreshMutation();
     useEffect(() => {
-        console.log(effectRan.current)
         if (effectRan.current === true || process.env.NODE_ENV !== 'development') {
             const verifyRefreshToken = async () => {
                 try {
@@ -51,15 +50,15 @@ function PersistLogin() {
     } else if (isError) {
         content = (
             <p className="errmsg">
-                {error.data?.message}
+                {`${error.data?.message} - `}
                 <Link to="login">Please login again</Link>
             </p>
         )
-    } else if (isSuccess && succesRecieving) { // isSuccess повертається швидше ніж виконується setCredentials({ accessToken })
-        console.log("isSuccess");
-        content = <Outlet />
     } else if (token && isUninitialized) { // When true, indicates that the mutation has not been fired yet.
         console.log('unInit');
+        content = <Outlet />
+    } else if (isSuccess && succesRecieving) { // isSuccess повертається швидше ніж виконується setCredentials({ accessToken })
+        console.log("isSuccess");
         content = <Outlet />
     }
 

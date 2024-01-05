@@ -3,7 +3,7 @@ import { useDeleteUserMutation, useUpdateUserMutation } from './usersApiSlice'
 import { faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router'
-import { ROLES } from '../../config/roles'
+import ROLES from '../../config/roles'
 
 
 const USER_REGEX = /^[A-z]{3,20}$/

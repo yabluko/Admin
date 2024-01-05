@@ -4,7 +4,7 @@ import { setCredentials } from '../../features/auth/authSlice';
 
 const baseQuery = fetchBaseQuery({
     baseUrl: 'http://localhost:3500',
-    credentials: 'include',
+    credentials: 'include', // !!! чи включати дані про аутентифікацію
     prepareHeaders: (headers, { getState }) => {
         const token = getState().authReducer.token;
 
@@ -19,13 +19,11 @@ const baseQuery = fetchBaseQuery({
 const baseQueryRefreshToken = async (args, api, extraOptions) => {
 
     let result = await baseQuery(args, api, extraOptions);
-
-
     if (result?.error?.status === 403) {
         console.log('sending refresh token');
 
         const refreshRes = await baseQuery('/auth/refresh', api, extraOptions);
-
+        console.log(refreshRes)
         if (refreshRes?.data) {
 
             api.dispatch(setCredentials({ ...refreshRes.data }));

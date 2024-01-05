@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router'
 import { useAddNewUserMutation } from './usersApiSlice'
-import { ROLES } from '../../config/roles'
+import ROLES from '../../config/roles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSave } from '@fortawesome/free-solid-svg-icons'
 
@@ -124,7 +124,6 @@ function NewUserForm() {
           id="roles"
           name="roles"
           className={`form__select ${validRolesClass}`}
-          multiple={true}
           size="3"
           value={roles}
           onChange={onRolesChanged}

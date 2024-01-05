@@ -14,6 +14,7 @@ function Prefetech() {
         const users = store.dispatch(usersApiSlice.endpoints.getUsers.initiate())
 
         return () => {
+            console.log('unsubscribing')
             notes.unsubscribe()
             users.unsubscribe()
         }

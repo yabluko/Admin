@@ -7,18 +7,18 @@ import { useSelector } from 'react-redux'
 import { selectNoteById } from './notesApiSlice'
 
 
-function Note({noteId}) {
-    const note = useSelector(state => selectNoteById(state , noteId))
+function Note({ noteId }) {
+    const note = useSelector(state => selectNoteById(state, noteId))
 
-    
+
     const navigate = useNavigate();
 
-    if(note){
-        const created = new Date(note.createdAt).toLocaleString('en-US', {day: 'numeric', month:'long'})
-        const updated = new Date(note.updatedAt).toLocaleString('en-US', {day: 'numeric', month:'long'})
+    if (note) {
+        const created = new Date(note.createdAt).toLocaleString('en-US', { day: 'numeric', month: 'long' })
+        const updated = new Date(note.updatedAt).toLocaleString('en-US', { day: 'numeric', month: 'long' })
 
-        const handleEdit = () => navigate(`/dash/notes${noteId}`)
-        
+        const handleEdit = () => navigate(`/dash/notes/${noteId}`)
+
         return (
             <tr className="table__row">
                 <td className="table__cell note__status">
@@ -43,9 +43,9 @@ function Note({noteId}) {
             </tr>
         )
 
-    }else return null
+    } else return null
 
-  
+
 }
 
 export default Note
