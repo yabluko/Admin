@@ -16,8 +16,8 @@ const PORT = process.env.PORT || 3500;
 connectDB();
 
 app.use(logger);
- 
-app.use(cors(corsOptions)); 
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
@@ -25,9 +25,9 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
 app.use(cookieParser());
 
-app.use('/', express.static(path.join(__dirname , 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.use('/',  require('./routes/root' )); 
+app.use('/', require('./routes/root'));
 
 app.use('/users', require('./routes/userRoutes'));
 
@@ -37,11 +37,11 @@ app.use('/auth', require('./routes/authRoutes'));
 
 app.all('*', (req, res) => {
     res.status(404)
-    if(req.accepts('html')){
+    if (req.accepts('html')) {
         res.sendFile(path.join(__dirname, 'views', '404.html'));
-    }else if (req.accepts('json')){
-        res.json({'message' : "Not found"});
-    }else{
+    } else if (req.accepts('json')) {
+        res.json({ 'message': "Not found" });
+    } else {
         res.type('txt').send('404 Not found')
     }
 })
@@ -50,9 +50,9 @@ app.all('*', (req, res) => {
 app.use(errorHandler);
 
 
-mongoose.connection.once('open' , () => {
+mongoose.connection.once('open', () => {
     console.log('Connected to MongoDB');
-    app.listen(PORT , (err) => {
+    app.listen(PORT, (err) => {
         err ? console.log(err) : console.log('Connected to server');
     })
 })
