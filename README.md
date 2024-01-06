@@ -23,11 +23,11 @@ This is admin site for your business purposes.In this web-application you can cr
 
 # Installation and Configuration 🛠️ 
 
-To download this django project you should do next steps:
+To download this full-stack project you should do next steps:
 
-1. Install NodeJs on your computer (if it is not already installed).
+1. Install NodeJs on your computer [if it is not already installed](https://nodejs.org/en).
 
-2. Clone my repository by command ``````
+2. Clone my repository by command ``` git clone  ```
 
 
 
