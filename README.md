@@ -47,31 +47,6 @@ After installation and configuration to run my application you just need in term
 
 ❌ -  Not Done 
 
-### 1. 
-
-
-
-
-### 2. Registraion page 
-
-
-
- 
-### 3. Login Page
-
-
-
- 
- 
- ### 4. Home page
- 
-
- 
- 
- 
- #### 5. Algorithms
-
- 
 
 
  # Contact me 📱
