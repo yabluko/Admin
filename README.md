@@ -1,7 +1,7 @@
 # AdminPanel
 
 
-This is admin site for your business purposes.In this web-application you can create your business system of who would be the employee, manager , admin and write task for each person.
+This is admin site for your business purposes.In this web-application you can create your business system of who would be the employee, manager , admin and write task for each of them.
 
 # Stack ⚙️
 
