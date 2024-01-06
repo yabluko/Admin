@@ -27,7 +27,7 @@ To download this full-stack project you should do next steps:
 
 1. Install NodeJs on your computer [if it is not already installed](https://nodejs.org/en).
 
-2. Clone my repository by command ``` git clone  ```
+2. Clone my repository by command ``` git clone https://github.com/yabluko/Admin.git ```
 
 
 
