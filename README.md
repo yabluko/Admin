@@ -47,6 +47,7 @@ After installation and configuration to run my application you just need in term
 
 ❌ -  Not Done 
 
+Not ready
 
 
  # Contact me 📱
