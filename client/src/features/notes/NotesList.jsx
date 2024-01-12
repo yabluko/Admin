@@ -2,7 +2,7 @@ import React from 'react'
 import { useGetNotesQuery } from './notesApiSlice'
 import Note from './Note';
 import useAuthHook from '../../hooks/useAuthHook';
-
+import { PulseLoader } from 'react-spinners';
 
 function NotesList() {
 
@@ -21,7 +21,7 @@ function NotesList() {
   let content;
 
   if (isLoading) {
-    content = <p>is Loading...</p>
+    content = <PulseLoader color={'#FFF'} />
   }
 
   if (isError) {

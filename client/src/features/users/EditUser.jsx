@@ -4,13 +4,14 @@ import { useSelector } from 'react-redux';
 import { selectUserById } from './usersApiSlice';
 import EditUserForm from './EditUserForm';
 
+import { PulseLoader } from 'react-spinners';
+
 function EditUser() {
   const { id } = useParams()
-  console.log("EditUser")
 
   const user = useSelector(state => selectUserById(state, id));
 
-  const content = <EditUserForm user={user} />
+  const content = user ? <EditUserForm user={user} /> : <PulseLoader color={'#FFF'} />
 
   return content
 }

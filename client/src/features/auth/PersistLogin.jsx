@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import usePersist from "../../hooks/usePersistHook";
 import { Outlet, Link } from "react-router-dom";
 import { tokenSelector } from "./authSlice";
+import { PulseLoader } from "react-spinners";
 
 function PersistLogin() {
 
@@ -45,8 +46,8 @@ function PersistLogin() {
         content = <Outlet />
     }
     else if (isLoading) {
-        console.log('isLoading');
-        content = <p>...Loading</p>
+
+        content = <PulseLoader color={'#FFF'} />
     } else if (isError) {
         content = (
             <p className="errmsg">

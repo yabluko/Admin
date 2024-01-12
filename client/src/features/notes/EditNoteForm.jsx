@@ -45,7 +45,6 @@ function EditNoteForm({ notes, users }) {
     await deleteNote({ id: notes.id })
   }
 
-  console.log(isSuccessDel)
 
   useEffect(() => {
     if (isSuccess || isSuccessDel) {

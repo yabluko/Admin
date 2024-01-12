@@ -4,7 +4,7 @@ import { faRightFromBracket, faFileCirclePlus, faFilePen, faUserGear, faUserPlus
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import useAuthHook from '../hooks/useAuthHook'
 import { useLogOutMutation } from '../features/auth/authApiSlice'
-
+import { PulseLoader } from 'react-spinners';
 
 const DASH_REGEX = /^\/dash(\/)?$/
 const NOTES_REGEX = /^\/dash\/notes(\/)?$/
@@ -28,7 +28,7 @@ function DashHeader() {
         if (isSuccess) navigate('/')
     }, [isSuccess, navigate])
 
-    if (isLoading) return <p>Loging out...</p>
+    if (isLoading) return <PulseLoader color={'#FFF'} />
 
     if (isError) return <p>Error : {error.data?.message}</p>
 
@@ -113,7 +113,7 @@ function DashHeader() {
 
 
     if (isLoading) {
-        buttonContent = <p>...isLoading</p>
+        buttonContent = <PulseLoader color={'#FFF'} />
 
     } else {
         buttonContent = (
