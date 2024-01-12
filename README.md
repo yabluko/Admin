@@ -41,7 +41,7 @@ After installation and configuration to run my application you just need in term
 
 # Decomposition of Tasks 📝:
 ## Authentication
-[X] Provide a login ,logout option
+- [X] Provide a login ,logout option
 [X] Backend auth service(jsonwebtoken)
     [X] Refresh token access
     [X] Access token access
