@@ -4,7 +4,7 @@ import { setCredentials } from '../../features/auth/authSlice';
 
 const baseQuery = fetchBaseQuery({
     baseUrl: 'https://technotes-api.onrender.com',
-    credentials: 'include', // !!! чи включати дані про аутентифікацію
+    credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().authReducer.token;
 
