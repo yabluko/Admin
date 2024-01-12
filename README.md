@@ -29,25 +29,49 @@ To download this full-stack project you should do next steps:
 
 2. Clone my repository by command ``` git clone https://github.com/yabluko/Admin.git ```
 
-
+3.Open folder server and write command ```npm i ``` do the same with client folder
 
 # Usage 🚀
 
 After installation and configuration to run my application you just need in terminal write next command
 
-5. Start the Express server by executing the following command: ```npm run dev```.
+1. Start the Express server by executing the following command: ```npm run dev```.
 
-6. Start the React server by executing the following command: ```npm start```.
+2. Start the React server by executing the following command: ```npm start```.
 
 # Decomposition of Tasks 📝:
+## Authentication
+[x] Provide a login ,logout option
+[x] Backend auth service(jsonwebtoken)
+    [x] Refresh token access
+    [x] Access token access
+[x] Require users to login at least once per week
 
-✅ - Done
 
-⏳ - In progress
+## Functionality
+[x] Crud operations with notes and users
+[x] Users can be Employees, Managers, or Admins
+[x]Provide a way to remove user access asap if needed
+[x]Add an employee login to the notes app
+[x]Employees can only view and edit their assigned 
+[x]Anyone can create a note (when customer checks-in)
+[x]Managers and Admins can view, edit, and delete all notes they can only acces User Settings and create new users
 
-❌ -  Not Done 
+Display current user and assigned role
 
-Not ready
+## Database
+[x] MongoDb Cluster
+[x] Mongosee schemas
+
+## Deplyoment 
+[] Render
+[] CI/CD
+
+## Tests
+[] Jest
+
+
+
 
 
  # Contact me 📱
