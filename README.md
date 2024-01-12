@@ -51,11 +51,11 @@ After installation and configuration to run my application you just need in term
 ## Functionality
 - [X] Crud operations with notes and users
 - [X] Users can be Employees, Managers, or Admins
-- [X]Provide a way to remove user access asap if needed
-- [X]Add an employee login to the notes app
-- [X]Employees can only view and edit their assigned 
-- [X]Anyone can create a note (when customer checks-in)
-- [X]Managers and Admins can view, edit, and delete all notes they can only acces User Settings and create new users
+- [X] Provide a way to remove user access asap if needed
+- [X] Add an employee login to the notes app
+- [X] Employees can only view and edit their assigned 
+- [X] Anyone can create a note (when customer checks-in)
+- [X] Managers and Admins can view, edit, and delete all notes they can only acces User Settings and create new users
 
 
 
