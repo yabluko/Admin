@@ -26,12 +26,10 @@ const getNotes = async (req, res) => {
 const createNote = async (req, res) => {
     try {
         const { username, title, text } = req.body;
-        console.log(username)
         const userModel = await User.findOne({ username }).exec();
 
 
 
-        console.log(userModel)
         if (!username || !title || !text || !userModel) {
             return res.status(400).json({ message: "All fields are required" });
         }
@@ -59,7 +57,6 @@ const createNote = async (req, res) => {
 const updatedNote = async (req, res) => {
     try {
         const { id, user, title, text, completed } = req.body;
-        console.log({ id, user, title, text, completed })
 
         if (!id || !user || !title || !text || !completed || typeof completed !== 'boolean') {
             return res.status(400).json({ message: "Required id of note" })
@@ -77,10 +74,9 @@ const updatedNote = async (req, res) => {
             return res.status(409).json({ message: 'Duplicate note title' })
         }
 
-        const lox = await User.findOne({ username: user }).lean().exec()
-        console.log(lox)
+        const username = await User.findOne({ username: user }).lean().exec()
 
-        note.user = lox;
+        note.user = username;
         note.title = title;
         note.text = text;
         note.completed = completed;
