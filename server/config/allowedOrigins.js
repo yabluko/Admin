@@ -1,5 +1,5 @@
 const allowedOrigins = [
-    'https://adminapp.onrender.com',
+    'https://adminapp-ekt5.onrender.com',
 ]
 
 module.exports = allowedOrigins;
