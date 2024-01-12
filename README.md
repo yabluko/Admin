@@ -65,10 +65,10 @@ After installation and configuration to run my application you just need in term
 
 ## Deplyoment 
 - [x] Render
-- [] CI/CD
+- [ ] CI/CD
 
 ## Tests
-- [] Jest
+- [ ] Jest
 
 
 
