@@ -42,33 +42,33 @@ After installation and configuration to run my application you just need in term
 # Decomposition of Tasks 📝:
 ## Authentication
 - [X] Provide a login ,logout option
-[X] Backend auth service(jsonwebtoken)
-    [X] Refresh token access
-    [X] Access token access
-[X] Require users to login at least once per week
+- [X] Backend auth service(jsonwebtoken)
+    - [X] Refresh token access
+    - [X] Access token access
+- [X] Require users to login at least once per week
 
 
 ## Functionality
-[X] Crud operations with notes and users
-[X] Users can be Employees, Managers, or Admins
-[X]Provide a way to remove user access asap if needed
-[X]Add an employee login to the notes app
-[X]Employees can only view and edit their assigned 
-[X]Anyone can create a note (when customer checks-in)
-[X]Managers and Admins can view, edit, and delete all notes they can only acces User Settings and create new users
+- [X] Crud operations with notes and users
+- [X] Users can be Employees, Managers, or Admins
+- [X]Provide a way to remove user access asap if needed
+- [X]Add an employee login to the notes app
+- [X]Employees can only view and edit their assigned 
+- [X]Anyone can create a note (when customer checks-in)
+- [X]Managers and Admins can view, edit, and delete all notes they can only acces User Settings and create new users
 
-Display current user and assigned role
+
 
 ## Database
-[x] MongoDb Cluster
-[x] Mongosee schemas
+- [x] MongoDb Cluster
+- [x] Mongosee schemas
 
 ## Deplyoment 
-[] Render
-[] CI/CD
+- [x] Render
+- [] CI/CD
 
 ## Tests
-[] Jest
+- [] Jest
 
 
 
