@@ -1,7 +1,6 @@
 const allowedOrigins = [
     'http://localhost:3000',
-    'https://dendirepairshop.com',
-    'https://dendirepairshop.com'
+    'https://adminapp.onrender.com',
 ]
 
 module.exports = allowedOrigins;
