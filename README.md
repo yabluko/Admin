@@ -40,7 +40,7 @@ After installation and configuration to run my application you just need in term
 2. Start the React server by executing the following command: ```npm start```.
 
 # Decomposition of Tasks 📝:
-## Authentication
+1. ## Authentication
 - [X] Provide a login ,logout option
 - [X] Backend auth service(jsonwebtoken)
     - [X] Refresh token access
@@ -48,7 +48,7 @@ After installation and configuration to run my application you just need in term
 - [X] Require users to login at least once per week
 
 
-## Functionality
+2. ## Functionality
 - [X] Crud operations with notes and users
 - [X] Users can be Employees, Managers, or Admins
 - [X] Provide a way to remove user access asap if needed
@@ -59,16 +59,17 @@ After installation and configuration to run my application you just need in term
 
 
 
-## Database
+3. ## Database
 - [x] MongoDb Cluster
 - [x] Mongosee schemas
 
-## Deplyoment 
+4. ## Deplyoment 
 - [x] Render
 - [ ] CI/CD
 
-## Tests
+5. ## Tests
 - [ ] Jest
+- [X] Postman 
 
 
 
