@@ -1,6 +1,6 @@
 # [AdminPanel](https://adminapp-ekt5.onrender.com)
 
-This is admin site for your business purposes in my example that's reapair shop.In this web-application you can create your business system of who would be the employee, manager , admin and write task for each of them.
+This is admin site for your business purposes in my example that's tech reapair shop.In this web-application you can create your business system of who would be the employee, manager , admin and write task for each of them.
 
 # Stack ⚙️
 
@@ -78,3 +78,4 @@ After installation and configuration to run my application you just need in term
 # Contact me 📱
 
 [Telegram](https://t.me/zhushchonka)
+[Gmail](https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new)
