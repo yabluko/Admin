@@ -1,4 +1,4 @@
-# [AdminPanel]()
+# [AdminPanel](https://adminapp-ekt5.onrender.com)
 
 This is admin site for your business purposes.In this web-application you can create your business system of who would be the employee, manager , admin and write task for each of them.
 
@@ -36,9 +36,9 @@ After installation and configuration to run my application you just need in term
 
 2. Start the React server by executing the following command: `npm start`.
 
-3. Login - testAdmin password - 122212 for log in as admin
+3. To Login as Admin username - `testAdmin` password - `122212` 
 
-4. Login - testUser password - 122212 for log in as admin
+4. To Login as Employee username - `testEmployee` password - `122212` 
 
 # Decomposition of Tasks 📝:
 
