@@ -1,6 +1,6 @@
 # [AdminPanel](https://adminapp-ekt5.onrender.com)
 
-This is admin site for your business purposes.In this web-application you can create your business system of who would be the employee, manager , admin and write task for each of them.
+This is admin site for your business purposes in my example that's reapair shop.In this web-application you can create your business system of who would be the employee, manager , admin and write task for each of them.
 
 # Stack ⚙️
 
