@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router'
 import useAuthHook from '../../hooks/useAuthHook'
 
 function EditNoteForm({ notes, users }) {
-  console.log(notes.user)
   const navigate = useNavigate()
   const { isManager, isAdmin } = useAuthHook()
 
