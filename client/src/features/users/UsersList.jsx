@@ -14,8 +14,6 @@ function UsersList() {
 
   let content;
 
-  console.log("UsersList");
-
   if (isLoading) {
     content = <PulseLoader color={'#FFF'} />
   }

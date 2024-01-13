@@ -3,6 +3,7 @@ import { useDeleteUserMutation, useUpdateUserMutation } from './usersApiSlice'
 import { faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router'
+import useAuthHook from "../../hooks/useAuthHook"
 import ROLES from '../../config/roles'
 
 
@@ -11,7 +12,7 @@ const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
 
 
 function EditUserForm({ user }) {
-
+  const { username: usernameOfUser } = useAuthHook()
 
   const [deleteUser, { isSuccess: isSuccessDel, isError: isErrorDel, error: delerror }] = useDeleteUserMutation();
   const [updateUser, { isSuccess, isLoading, isError, error }] = useUpdateUserMutation();
@@ -68,6 +69,12 @@ function EditUserForm({ user }) {
 
 
   const onDeleteUserClicked = async () => {
+    if (username === usernameOfUser) {
+      const res = await deleteUser({ id: user.id })
+      if (res?.data) {
+        navigate('/login')
+      }
+    }
     await deleteUser({ id: user.id })
   }
 
