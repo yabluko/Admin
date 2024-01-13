@@ -78,4 +78,4 @@ After installation and configuration to run my application you just need in term
 # Contact me 📱
 
 [Telegram](https://t.me/zhushchonka)
-[Gmail]([https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new](https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWtMkNJPbQXKlWWZZHtHTgknpNgwDvdKnbNDNZBrXvWSLDGcMXVtNdGCsthFkVdqzXpxCTFBG)https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWtMkNJPbQXKlWWZZHtHTgknpNgwDvdKnbNDNZBrXvWSLDGcMXVtNdGCsthFkVdqzXpxCTFBG)
+[Gmail](https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new](https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWtMkNJPbQXKlWWZZHtHTgknpNgwDvdKnbNDNZBrXvWSLDGcMXVtNdGCsthFkVdqzXpxCTFBG)https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWtMkNJPbQXKlWWZZHtHTgknpNgwDvdKnbNDNZBrXvWSLDGcMXVtNdGCsthFkVdqzXpxCTFBG)
