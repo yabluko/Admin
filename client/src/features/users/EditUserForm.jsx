@@ -15,7 +15,6 @@ function EditUserForm({ user }) {
 
   const [deleteUser, { isSuccess: isSuccessDel, isError: isErrorDel, error: delerror }] = useDeleteUserMutation();
   const [updateUser, { isSuccess, isLoading, isError, error }] = useUpdateUserMutation();
-  console.log("EditUserForm")
   const navigate = useNavigate();
 
   const [username, setUsername] = useState(user.username);
@@ -51,9 +50,8 @@ function EditUserForm({ user }) {
     const values = Array.from(
       e.target.selectedOptions,
       (option) => option.value
-
     )
-    setRoles(values);
+    setRoles(values)
   }
 
   const onActiveChanged = () => {

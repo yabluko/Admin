@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router'
 import useAuthHook from '../../hooks/useAuthHook'
 
 function EditNoteForm({ notes, users }) {
+  console.log(notes.user)
   const navigate = useNavigate()
   const { isManager, isAdmin } = useAuthHook()
 
@@ -35,6 +36,7 @@ function EditNoteForm({ notes, users }) {
 
   const onFormUpdate = async (e) => {
     e.preventDefault()
+    console.log({ id: notes.id, user: usersAll, title, text, completed })
     if (canSave) {
       await updateNote({ id: notes.id, user: usersAll, title, text, completed })
     }
@@ -63,7 +65,7 @@ function EditNoteForm({ notes, users }) {
   options = users.map(user => (
     <option
       key={user.id}
-      value={user.username}
+      value={user.id}
     >
       {user.username}
     </option>

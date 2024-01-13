@@ -14,9 +14,9 @@ import Prefetech from "./features/auth/Prefetech";
 import PersistLogin from "./features/auth/PersistLogin";
 import ROLES from './config/roles';
 import AuthRoles from './features/auth/authRoles';
-import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+// import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 
-if (process.env.NODE_ENV === 'production') disableReactDevTools()
+// if (process.env.NODE_ENV === 'production') disableReactDevTools()
 
 function App() {
   return (
