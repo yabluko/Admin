@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn');
 const corsOptions = require('./config/corsOptions');
 const app = express();
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT;
 
 
 connectDB();

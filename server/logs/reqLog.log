@@ -38539,3 +38539,16 @@
 20240113	14:40:43	b0bff5d1-7c1a-4674-b137-5612fe39e86e	GET	/users	http://localhost:3000
 20240113	14:41:00	55032683-34c8-4c47-8741-22d4b50531a3	OPTIONS	/auth/logout	http://localhost:3000
 20240113	14:41:00	bb132974-49ab-4d54-8581-613d11371825	POST	/auth/logout	http://localhost:3000
+20240113	15:47:26	6006f984-2744-444e-8e4a-cc58d3551e89	OPTIONS	/auth	http://localhost:3000
+20240113	15:47:26	c5bbd5b3-5d39-4c11-b56b-4a6be3da0de6	POST	/auth	http://localhost:3000
+20240113	15:47:26	cb0f5459-4349-4421-b56f-220ef510b15e	OPTIONS	/notes	http://localhost:3000
+20240113	15:47:26	0524698e-9748-4bfa-8c17-74aa169687f8	OPTIONS	/users	http://localhost:3000
+20240113	15:47:26	14a41aed-9c64-4f8f-962b-812eb6d51384	GET	/notes	http://localhost:3000
+20240113	15:47:26	4f9ea1f2-4211-45e6-84f5-a56a43bf1960	GET	/users	http://localhost:3000
+20240113	15:48:06	089a8690-8508-47ff-873e-d48cd135b40c	OPTIONS	/users	http://localhost:3000
+20240113	15:48:06	226deafb-819e-4f98-9b8c-28a8771d8a0d	POST	/users	http://localhost:3000
+20240113	15:48:06	688fbcf8-a031-4379-8b1c-6daef6c8a17e	GET	/users	http://localhost:3000
+20240113	15:48:22	21580514-ef6c-4b12-ba65-c637ed004409	OPTIONS	/users	http://localhost:3000
+20240113	15:48:22	2bcc26a7-487c-4e43-aa2c-1b64900125d8	GET	/users	http://localhost:3000
+20240113	15:48:37	ceef3aad-505c-4c27-a8cb-bf7afb8e7115	OPTIONS	/users	http://localhost:3000
+20240113	15:48:37	dcd8cb2b-59b1-47c2-b949-49f8ff898019	GET	/users	http://localhost:3000
