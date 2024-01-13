@@ -57,8 +57,9 @@ const createNote = async (req, res) => {
 const updatedNote = async (req, res) => {
     try {
         const { id, user, title, text, completed } = req.body;
+        console.log(id, user, title, text, completed)
 
-        if (!id || !user || !title || !text || !completed || typeof completed !== 'boolean') {
+        if (!id || !user || !title || !text || typeof completed !== 'boolean') {
             return res.status(400).json({ message: "Required id of note" })
         }
 
@@ -74,7 +75,8 @@ const updatedNote = async (req, res) => {
             return res.status(409).json({ message: 'Duplicate note title' })
         }
 
-        const username = await User.findOne({ username: user }).lean().exec()
+        const username = await User.findOne({ _id: user }).exec()
+
 
         note.user = username;
         note.title = title;

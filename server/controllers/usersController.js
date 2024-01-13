@@ -30,10 +30,15 @@ const createUser = async (req, res) => {
         }
 
         const passwordHash = await bcrypt.hash(password, 10);
+        console.log({ username, password, roles })
 
-        const user = (!isArray(roles) || !roles.length) ? await User.create({ username, password: passwordHash })
-            : await User.create({ username, password: passwordHash, roles })
+        const user = (!Array.isArray(roles) || !roles.length) ?
+            await User.create({ username, password: passwordHash }) :
+            await User.create({ username, password: passwordHash, roles })
 
+
+
+        console.log(user)
         if (user) {
             res.status(201).json({ message: 'User was successfully created' });
         } else {
