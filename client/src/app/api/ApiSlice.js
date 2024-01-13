@@ -3,7 +3,7 @@ import { setCredentials } from '../../features/auth/authSlice';
 
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://adminapp-api.onrender.com',
+    baseUrl: 'http://localhost:3500', //'https://adminapp-api.onrender.com'
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().authReducer.token;
