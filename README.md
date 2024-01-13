@@ -38,6 +38,7 @@ After installation and configuration to run my application you just need in term
 1. Start the Express server by executing the following command: ```npm run dev```.
 
 2. Start the React server by executing the following command: ```npm start```.
+3. When you open site try login - admin with password - 122212
 
 # Decomposition of Tasks 📝:
 1. ## Authentication
